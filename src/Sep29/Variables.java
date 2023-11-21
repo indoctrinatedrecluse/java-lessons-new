@@ -4,12 +4,13 @@ public class Variables {
     public static void main (String[] args) {
         int i = 32769;
         short s = (short) i;
-        System.out.println(s);
+        System.out.println(i + "," + s);
         System.out.println();
 
         // this is the only exception
         // when assigning values directly by equal sign, as long as the strings are equal,
         // the corresponding variables point to the same memory location.
+        // this is because of "string pooling"
         String s1 = "Hello";
         String s2 = "Hello";
         System.out.println(s1 == s2);
